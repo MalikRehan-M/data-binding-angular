@@ -1,0 +1,41 @@
+/* Add some padding and center the list */
+*{
+    font-size: 16px;
+}
+h1{
+    font-size: 22px;
+}
+ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  /* Style list items */
+  li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Style edit and remove buttons */
+  button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 8px;
+  }
+  
+  /* Style input field for editing */
+  input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  

@@ -1,0 +1,12 @@
+<h1>item-list works!</h1>
+<input [(ngModel)]="newItem" placeholder="Add a new item">
+<button (click)="addItem()">Add</button>
+<ul>
+    <li *ngFor="let item of items">
+      <span *ngIf="!item.editing">{{ item.text }}</span>
+      <input *ngIf="item.editing" [(ngModel)]="item.text">
+      <button (click)="editItem(item)">Edit</button>
+      <button *ngIf="item.editing" (click)="saveItem(item)">Save</button>
+      <button (click)="removeItem(item)">Remove</button>
+    </li>
+  </ul>
